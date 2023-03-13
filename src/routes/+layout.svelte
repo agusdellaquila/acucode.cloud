@@ -1,18 +1,16 @@
 <script>
   import "../app.css"
+  import Navbar from "../components/navbar.svelte";
+  import Footer from "../components/footer.svelte";
 </script>
 
 <div class="background">
+  <Navbar />
   <slot> </slot>
+  <Footer />
 </div>
 
 
 <style>
-	.background {
-		background: linear-gradient(180deg, #82ADDB 0%, #757ABF 54.17%, #191621 100%);
-		color: white;
-		height: 100vh;
-		margin: 0rem;
-		overflow: hidden; 
-	}
+
 </style>

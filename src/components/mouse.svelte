@@ -21,7 +21,6 @@
 
 
 <div id="blob" bind:this={blob}></div>
-    <div id="blur"></div>
 
 
 <style>
@@ -41,8 +40,8 @@
 
     #blob {
         background-color: white;
-        height: 26vmax;
-        aspect-ratio: 1;
+        height: 20vmax;
+        width: 20vmax;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -52,14 +51,6 @@
         animation: rotate 20s infinite;
         opacity: 0.9;
         overflow: hidden;
-    }
-
-    #blur {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-        backdrop-filter: blur(12vmax);
-        overflow: hidden;
+        z-index: 1;
     }
 </style>

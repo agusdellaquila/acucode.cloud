@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: 2px rgba(0, 0, 0, 0.11);
+    }
+    .font-outline-4 {
+      -webkit-text-stroke: 4px rgba(255, 255, 255, 0.292);
+    }
+  }
+
+html {
+    font-family: rubik;
+    z-index: 3;
+    background: linear-gradient(180deg, #82ADDB 0%, #757ABF 54.17%, #191621 100%);
+    color: white;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
