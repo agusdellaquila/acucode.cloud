@@ -55,7 +55,10 @@
     ]
 
     let softSkills = [
-        {name: "Organization and time management"},
+        {name: "Organization"},
+        {name: "Time management"},
+        {name: "Teamwork"},
+        {name: "Problem solving"},
         {name: "Attention to detail"},
         {name: "Punctuality"},
         {name: "Adaptability"},
@@ -89,9 +92,11 @@
                     <p class="text-6xl mt-4">WELCOME</p>
                     <img class="w-72" src={Underline} alt="Underline"/>
                 </div>
-                <p class="text-6xl mt-4 ml-6">TO MY  
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-pink-400 to-violet-500 md:inline-block">SPACE</span> 
-                    <br> ON THE <br> INTERNET</p>
+                <div class="text-6xl mt-4 ml-6">
+                    <p>TO MY <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-400 to-violet-500">SPACE</span> </p>
+                    <p class="text-left"> ON THE </p> 
+                    <p class="text-left"> INTERNET</p>
+                </div>
                 <!-- <img class="ml-20 w-44 h-44" src={Paperplane} alt="Paperplane"/> -->
             </div>
             <img src={Clouds} alt="Clouds"/>
@@ -99,22 +104,31 @@
     </div>
 
     <!-- WORK -->
-    <div class="welcome flex justify-center">
+    <div id="projects" class="welcome flex justify-center">
         <div class="flex flex-col mt-44 items-center">
             <p class="mt-4 font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">My best projects</p>
 
-            <div class="relative">
-                <img class="absolute bottom-60 left-0" src={Cobra} alt="Cobra Denim"/>
-                <img class="absolute top-0 left-1/2 transform -translate-x-1/2 z-10" src={Binarybrains} alt="Binary Brains"/>
-                <img class="absolute bottom-40 right-0" src={Hexa} alt="Hexa"/>
+            <div class="projects mt-44">
+                <img class="absolute w-24 -top-20 left-1/2 transform -translate-x-1/2" src={Crown} alt="Crown"/>
+                <a href="/" target="_blank" rel="noreferrer">
+                    <img class="absolute bottom-60 left-0" src={Cobra} alt="Cobra Denim"/>
+                </a>
+                <a href="/" target="_blank" rel="noreferrer">
+                    <img class="absolute bottom-40 right-0" src={Hexa} alt="Hexa"/>
+                </a>
+                <div class="grow">
+                    <a href="https://binarybrainsdev.netlify.app/" target="_blank" rel="noreferrer">
+                        <img class="absolute top-0 left-1/2 transform -translate-x-1/2" src={Binarybrains} alt="Binary Brains"/>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- SKILLS -->
-    <div class="welcome flex justify-center">
+    <div id="skills" class="welcome flex justify-center -mt-96">
         <div class="flex flex-col mt-44 items-center">
-            <h2 class="mt-4 text-left font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">Skills</h2>
+            <h2 class="text-left font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">Skills</h2>
 
             <section class="skills mt-20">
                 <h3 class="text-4xl">Programming & Design</h3>
@@ -137,10 +151,32 @@
     </div>
 
     <!-- CONTACT -->
-    <div class="mt-40">
-        <p class="text-center mt-4 font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">CONTACT</p>
+    <div id="contact" class="mt-40">
+        <section class="-mb-10">
+            <div class="max-w-lg px-4 pt-24 mx-auto text-left md:max-w-none md:text-center">
+                 <h1 class="font-extrabold leading-10 tracking-tight text-white text-center sm:leading-none md:text-6xl text-4xl lg:text-7xl">
+                   <span class=" mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-emerald-400 to-green-500 md:inline-block"> Contact <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-cyon-400 to-purple-300"> me</span> </span>
+                 </h1>
 
-        <p class="text-center mt-14 font-semibold leading-10 tracking-tight sm:leading-none text-lg">Shedule a quick talk!</p>
+                 <div class="flex mt-8 justify-center">
+                    <a href="https://www.linkedin.com/in/agustin-dell-aquila-a5b2451b2/" target="_blank" rel="noreferrer">
+                        <img class="w-12 grow" src={LinkedIn} alt="LinkedIn"/>                    
+                    </a>
+                    <a href="https://github.com/agusdellaquila" target="_blank" rel="noreferrer">
+                        <img class="w-12 grow" src={Github} alt="Github"/>
+                    </a>
+                </div>  
+
+                 <div class="mx-auto grow rounded-lg font-black mt-5 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg">
+                   <a href="mailto:agusdellaquila72@gmail.com" class="bg-tkb border font-medium text-sm text-white py-3 px-7 rounded-full">
+                        Send an email 📬
+                   </a>
+                 </div>
+                 <div class="mx-auto rounded-lg mt-5 md:mt-12 md:max-w-lg text-center lg:text-lg">
+                        Or shedule a quick talk!
+                  </div>
+               </div>
+        </section>
         <Calendly />
     </div>
     <!-- <Mouse /> -->

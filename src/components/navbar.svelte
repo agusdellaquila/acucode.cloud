@@ -11,7 +11,7 @@
             <div class="flex items-center">
                 <!-- Logo -->
                 <a href="/" class="cursor-pointer">
-                    <img class="h-10 object-cover" src={Logo} alt="Logo">
+                    <img class="h-10 object-cover grow" src={Logo} alt="Logo">
                 </a>
             </div>
 
@@ -21,26 +21,30 @@
                     Home
                 </a>
 
-                <a href="/" class="flex cursor-pointer transition-colors duration-300 font-semibold">
+                <a href=/#projects class="flex cursor-pointer transition-colors duration-300 font-semibold">
                     Projects
                 </a>
 
-                <a href="/" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
+                <a href=/#skills class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
                     Skills
                 </a>
 
-                <a href="/" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
+                <a href="/personal" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
+                    Personal
+                </a>
+
+                <a href="/about" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
                     About me
                 </a>
             </div>
 
             <!-- Icon Menu Section -->
             <div class="flex items-center space-x-5">
-                <a href="/" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
+                <a href="https://drive.google.com/file/d/1tffflNdZPUoz8NpNNY8hdFTp8xSr-JQS/view?usp=share_link" target="_blank" rel="noreferrer" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
                     Download CV
                 </a>
 
-                <a href="/" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">  
+                <a href=/#contact class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">  
                     Contact
                 </a>
             </div>

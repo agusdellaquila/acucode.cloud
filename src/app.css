@@ -19,4 +19,13 @@ html {
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.05);
 }

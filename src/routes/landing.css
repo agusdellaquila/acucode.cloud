@@ -37,6 +37,8 @@
     width: 80%;
 }
 
-.cobra {
-
+.projects {
+    position: relative;
+    width: 100vw;
+    height: 900px;
 }
