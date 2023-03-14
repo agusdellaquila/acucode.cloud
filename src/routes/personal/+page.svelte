@@ -1,18 +1,18 @@
 <script>
-    import celeste from '../../assets/Gaming/celeste.png';
-    import holllowknight from '../../assets/Gaming/holllowknight.png';
-    import revelations from '../../assets/Gaming/revelations.png';
-    import cuphead from '../../assets/Gaming/cuphead.png';
-    import grumps from '../../assets/Gaming/grumps.png';
-    import mario from '../../assets/Gaming/mario.png';
+    // import celeste from '../../assets/Gaming/celeste.png';
+    // import holllowknight from '../../assets/Gaming/holllowknight.png';
+    // import revelations from '../../assets/Gaming/revelations.png';
+    // import cuphead from '../../assets/Gaming/cuphead.png';
+    // import grumps from '../../assets/Gaming/grumps.png';
+    // import mario from '../../assets/Gaming/mario.png';
 
     const achievements = [
-        { name: 'Thanks for playing', description: '"Complete every C-Side." - Celeste', image: celeste, alt: "celeste achievement", comment: 'This achievement covers, the completition of the main game, the B sides, and all C sides. This was a nightmare, but taught me patience.'},
-        { name: 'The Hollow Knight', description: '"Defeat the Hollow Knight and become the Vessel." - Hollow Knight', image: holllowknight, alt: "hollow knight achievement", comment: 'The sacrifice of the Knight to contain the abyss.'},
-        { name: 'A Better Tomorrow', description: '"In Revelations, complete the cycle. - Call Of Duty Black ops III"', image: revelations, alt: "call of duty bo3 achievement", comment: "A super easter egg that requires the completition of all BlackOps III zombies easter eggs."},
-        { name: 'Souls Saved', description: '"Complete the game on Normal. - Cuphead"', image: cuphead, alt: "cuphead achievement", comment: "Completing the entire game on normal difficulty is quite a challenge, can't imagine on Expert mode."},
-        { name: 'Metamorphosis', description: '"Rescue all of the imprisoned grubs. - Hollow Knight"', image: grumps, alt: "hollow knight achievement", comment: "Rescuing all the grubs, made me feel like a hero. Can't get over that final twist."},
-        { name: 'Archivist Toadette', description: '"Aquire all the moons. - Mario Oddyssey"', image: mario, alt: "mario odyssey achievement", comment: "One of the most enjoyable game experiences I've ever had."},
+        { name: 'Thanks for playing', description: '"Complete every C-Side." - Celeste', image: "https://agusdellaquila.vercel.app/media/gaming/achievements/celeste.png", alt: "celeste achievement", comment: 'This achievement covers, the completition of the main game, the B sides, and all C sides. This was a nightmare, but taught me patience.'},
+        { name: 'The Hollow Knight', description: '"Defeat the Hollow Knight and become the Vessel." - Hollow Knight', image: "https://agusdellaquila.vercel.app/media/gaming/achievements/holllowknight.png", alt: "hollow knight achievement", comment: 'The sacrifice of the Knight to contain the abyss.'},
+        { name: 'A Better Tomorrow', description: '"In Revelations, complete the cycle. - Call Of Duty Black ops III"', image: "https://agusdellaquila.vercel.app/media/gaming/achievements/revelations.png", alt: "call of duty bo3 achievement", comment: "A super easter egg that requires the completition of all BlackOps III zombies easter eggs."},
+        { name: 'Souls Saved', description: '"Complete the game on Normal. - Cuphead"', image: "https://agusdellaquila.vercel.app/media/gaming/achievements/cuphead.png", alt: "cuphead achievement", comment: "Completing the entire game on normal difficulty is quite a challenge, can't imagine on Expert mode."},
+        { name: 'Metamorphosis', description: '"Rescue all of the imprisoned grubs. - Hollow Knight"', image: "https://agusdellaquila.vercel.app/media/gaming/achievements/grumps.png", alt: "hollow knight achievement", comment: "Rescuing all the grubs, made me feel like a hero. Can't get over that final twist."},
+        { name: 'Archivist Toadette', description: '"Aquire all the moons. - Mario Oddyssey"', image: "https://agusdellaquila.vercel.app/media/gaming/achievements/mario.png", alt: "mario odyssey achievement", comment: "One of the most enjoyable game experiences I've ever had."},
     ]
 </script>
 
