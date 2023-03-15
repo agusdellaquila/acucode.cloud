@@ -8,10 +8,15 @@
         <nav class="flex justify-around py-4 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10 font-semibold">
 
             <!-- Logo Container -->
-            <div class="flex items-center">
-                <!-- Logo -->
+            <!-- <div class="flex items-center">
                 <a href="/" class="cursor-pointer">
                     <img class="h-10 object-cover grow" src={Logo} alt="Logo">
+                </a>
+            </div> -->
+            <div>
+                <a href="/" class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-300">
+                    <span class="sr-only">Logo</span>
+                    <span class="text-2xl m-auto">☁️</span>
                 </a>
             </div>
 
@@ -31,10 +36,6 @@
 
                 <a href="/personal" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
                     Personal
-                </a>
-
-                <a href="/about" class="flex hover:text-indigo-200 cursor-pointer transition-colors duration-300">
-                    About me
                 </a>
             </div>
 

@@ -11,7 +11,7 @@
     import Clouds from '../assets/Landing/cloud_separator.png';
     import Cobra from '../assets/Landing/cobradenim.png';
     import Binarybrains from '../assets/Landing/binarybrains.png';
-    import Hexa from '../assets/Landing/hexa.png';
+    import Stocksystem from '../assets/Landing/stocksystem.png';
     import Crown from '../assets/Landing/crown.png';
 
     let skills = [
@@ -69,7 +69,7 @@
 
 <div>
     <div id="blur"></div>
-    <div class="header flex justify-evenly mt-40">
+    <div class="header flex justify-evenly mt-28">
         <div class="flex flex-col">
             <h1 class="font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">Agustín <br> Dell' Aquila</h1>
             <p class="text-3xl mt-2">Fullstack Developer</p>
@@ -82,40 +82,55 @@
                 </a>
             </div>
         </div>
-        <img class="logo" src={Logo} alt="Logo"/>
+        <img class="logo hidden md:block lg:block" src={Logo} alt="Logo"/>
     </div>
 
     <div class="welcome flex justify-center">
-        <div class="flex flex-col mt-44 items-center">
+        <div class="mt-16 lg:mt-32 flex flex-col items-center">
             <div class="flex font-extrabold leading-10 tracking-tight text-white text-center sm:leading-none md:text-6xl text-4xl lg:text-7xl">
                 <div class="flex flex-col">
-                    <p class="text-6xl mt-4">WELCOME</p>
-                    <img class="w-72" src={Underline} alt="Underline"/>
+                    <p class="text-3xl md:text-4xl lg:text-6xl mt-4">WELCOME</p>
+                    <img class="w-36" src={Underline} alt="Underline"/>
                 </div>
-                <div class="text-6xl mt-4 ml-6">
-                    <p>TO MY <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-400 to-violet-500">SPACE</span> </p>
+                <div class="text-3xl md:text-4xl lg:text-6xl mt-4 ml-2">
+                    <p>TO MY 
+                        <a href="/personal">
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-pink-400 to-violet-500">SPACE</span> 
+                        </a>
+                    </p>
                     <p class="text-left"> ON THE </p> 
                     <p class="text-left"> INTERNET</p>
                 </div>
                 <!-- <img class="ml-20 w-44 h-44" src={Paperplane} alt="Paperplane"/> -->
             </div>
-            <img src={Clouds} alt="Clouds"/>
         </div>
     </div>
+    
+    <img class="w-full" src={Clouds} alt="Clouds"/>
 
     <!-- WORK -->
     <div id="projects" class="welcome flex justify-center">
-        <div class="flex flex-col mt-44 items-center">
+        <div class="flex flex-col mt-24 lg:mt-32 items-center">
             <p class="mt-4 font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">My best projects</p>
 
-            <div class="projects mt-44">
+            <div class="projects mt-28">
                 <img class="absolute w-24 -top-20 left-1/2 transform -translate-x-1/2" src={Crown} alt="Crown"/>
-                <a href="/" target="_blank" rel="noreferrer">
+                <!-- <div class="grow"> -->
+                    <a href="https://cobra-denim.vercel.app/" target="_blank" rel="noreferrer">
+                        <img class="absolute bottom-80 left-0" src={Cobra} alt="Cobra Denim"/>
+                    </a>
+                <!-- </div> -->
+                <!-- <div class="grow"> -->
+                    <a href="/" target="_blank" rel="noreferrer">
+                        <img class="absolute bottom-20 right-0" src={Stocksystem} alt="Stocksystem"/>
+                    </a>
+                <!-- </div> -->
+                <!-- <a href="/" target="_blank" rel="noreferrer">
                     <img class="absolute bottom-60 left-0" src={Cobra} alt="Cobra Denim"/>
                 </a>
                 <a href="/" target="_blank" rel="noreferrer">
-                    <img class="absolute bottom-40 right-0" src={Hexa} alt="Hexa"/>
-                </a>
+                    <img class="absolute bottom-40 right-0" src={Stocksystem} alt="Stocksystem"/>
+                </a> -->
                 <div class="grow">
                     <a href="https://binarybrainsdev.netlify.app/" target="_blank" rel="noreferrer">
                         <img class="absolute top-0 left-1/2 transform -translate-x-1/2" src={Binarybrains} alt="Binary Brains"/>
@@ -127,21 +142,21 @@
 
     <!-- SKILLS -->
     <div id="skills" class="welcome flex justify-center -mt-96">
-        <div class="flex flex-col mt-44 items-center">
+        <div class="flex flex-col -mt-10 items-center">
             <h2 class="text-left font-extrabold leading-10 tracking-tight sm:leading-none md:text-6xl text-4xl lg:text-7xl">Skills</h2>
 
-            <section class="skills mt-20">
-                <h3 class="text-4xl">Programming & Design</h3>
+            <section class="skills mt-6">
+                <h3 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold">Programming & Design</h3>
 
-                <div class="mt-8 flex flex-wrap gap-x-8 gap-y-4">
+                <div class="px-4 mt-8 flex flex-wrap justify-around gap-x-8 gap-y-4">
                     {#each skills as skill}
                         <Skill name={skill.name} icon={skill.icon} />
                     {/each}
                 </div>
 
-                <h3 class="text-4xl mt-20">Soft Skills</h3>
+                <h3 class="text-center text-2xl md:text-4xl lg:text-6xl mt-10 font-bold">Soft Skills</h3>
 
-                <div class="mt-8 flex flex-wrap gap-x-8 gap-y-4">
+                <div class="mt-8 px-4 flex flex-wrap justify-around gap-x-8 gap-y-4">
                     {#each softSkills as skill}
                         <Skill name={skill.name} icon={skill.icon} />
                     {/each}
@@ -151,14 +166,14 @@
     </div>
 
     <!-- CONTACT -->
-    <div id="contact" class="mt-40">
-        <section class="-mb-10">
-            <div class="max-w-lg px-4 pt-24 mx-auto text-left md:max-w-none md:text-center">
+    <div id="contact" class="mt-16">
+        <section>
+            <div class="max-w-lg px-4 mx-auto text-left md:max-w-none md:text-center">
                  <h1 class="font-extrabold leading-10 tracking-tight text-white text-center sm:leading-none md:text-6xl text-4xl lg:text-7xl">
-                   <span class=" mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-emerald-400 to-green-500 md:inline-block"> Contact <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-cyon-400 to-purple-300"> me</span> </span>
+                   <span class=" mt-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-emerald-400 to-lime-300 md:inline-block"> Contact me </span>
                  </h1>
 
-                 <div class="flex mt-8 justify-center">
+                 <div class="flex mt-6 justify-center">
                     <a href="https://www.linkedin.com/in/agustin-dell-aquila-a5b2451b2/" target="_blank" rel="noreferrer">
                         <img class="w-12 grow" src={LinkedIn} alt="LinkedIn"/>                    
                     </a>
@@ -167,12 +182,12 @@
                     </a>
                 </div>  
 
-                 <div class="mx-auto grow rounded-lg font-black mt-5 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg">
+                 <div class="mx-auto grow rounded-lg font-black mt-8 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg">
                    <a href="mailto:agusdellaquila72@gmail.com" class="bg-tkb border font-medium text-sm text-white py-3 px-7 rounded-full">
                         Send an email 📬
                    </a>
                  </div>
-                 <div class="mx-auto rounded-lg mt-5 md:mt-12 md:max-w-lg text-center lg:text-lg">
+                 <div class="mx-auto rounded-lg mt-8 md:mt-12 md:max-w-lg text-center lg:text-lg">
                         Or shedule a quick talk!
                   </div>
                </div>
